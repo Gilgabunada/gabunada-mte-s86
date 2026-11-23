@@ -3,7 +3,7 @@ const Movie = require("../models/Movie");
 
 const isValidObjectId = (id) => mongoose.Types.ObjectId.isValid(id);
 
-// Add movie (Admin) -> returns 201 Created with the movie document
+// Add movie (Admin) 
 module.exports.addMovie = async (req, res) => {
   try {
     const { title, director, year, description, genre } = req.body;
