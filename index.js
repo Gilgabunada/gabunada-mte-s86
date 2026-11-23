@@ -10,7 +10,7 @@ const movie = require("./routes/movie.js");
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://127.0.0.1:5173","gabunada-mte-88.vercel.app"],
+    origin: ["http://localhost:5173", "http://127.0.0.1:5173","https://gabunada-mte-88.vercel.app"],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
